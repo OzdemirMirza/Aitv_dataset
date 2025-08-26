@@ -1,0 +1,8 @@
+train: '/Users/yusufozdemir/Desktop/test/Yangin_gece_cıg 2/train'
+val: '/Users/yusufozdemir/Desktop/test/Yangin_gece_cıg 2/val'
+test: '/Users/yusufozdemir/Desktop/test/Yangin_gece_cıg 2/test'
+
+nc: 1
+names: ["Human"]
+ 
+ 
