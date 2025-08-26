@@ -25,38 +25,32 @@ Disaster Scenarios Included
 	•	❄️ Avalanche
 	•	🌙 Night-time conditions
 
-⸻
 
-📁 Dataset Structure
+## 📁 Dataset Structure
 
-The AiTV dataset is organized into training, validation, and test sets in standard YOLO format:
+The AiTV dataset is organized into **training**, **validation**, and **test** sets in standard **YOLO format**:
 
 aitv/
-│
 ├── train/
-│   ├── images/
-│   │   └── [Training image files]
-│   └── labels/
-│       └── [YOLO format label files for training images]
+│   ├── images/              # Training image files (JPG/PNG)
+│   └── labels/              # YOLO format labels for training images
 │
 ├── val/
-│   ├── images/
-│   │   └── [Validation image files]
-│   └── labels/
-│       └── [YOLO format label files for validation images]
+│   ├── images/              # Validation image files (JPG/PNG)
+│   └── labels/              # YOLO format labels for validation images
 │
 └── test/
-    ├── images/
-    │   └── [Test image files]
-    └── labels/
-        └── [YOLO format label files for test images]
+├── images/              # Test image files (JPG/PNG)
+└── labels/              # YOLO format labels for test images
 
-	•	Image Files: Located under the images/ subfolder (JPG/PNG format).
-	•	YOLO Annotations: Located under the labels/ subfolder.
-  
-  Each .txt file has one line per object:
-  class x_center y_center width height
-  (All coordinates are normalized to [0, 1]).
+### File Descriptions
+- **Image Files** → Located under the `images/` subfolder (`.jpg` / `.png`).  
+- **YOLO Annotations** → Located under the `labels/` subfolder (`.txt` format).  
+  Each `.txt` file contains one line per object:  
+
+- Coordinates are normalized to `[0, 1]`.  
+- Class index = `0` for `person`.  
+
 
 
 📌 Usage Notes
